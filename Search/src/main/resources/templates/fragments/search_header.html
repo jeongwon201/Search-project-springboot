@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<header class="container-fluid search-header"
+	th:fragment="search_headerFragment">
+
+	<div class="col-md-12 search-header-container" align="center">
+		<div class="row">
+			<form id="search-form" class="form-inline search-header-form" name="search"
+				th:action="@{/search/list}" method="get">
+				<div class="form-group search-header-homelink">
+					<a th:href="@{/}">SEARCH</a>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-search"></i></span>
+						<input id="keyword" type="text" class="form-control"
+							name="keyword" th:value="${shopItems.keyword}"
+							placeholder="검색어를 입력하세요." autocomplete="off">
+					</div>
+					<button id="btnSearch" class="btn btn-default">검색</button>
+					<div class="keyword-box keyword-box-search text-left">
+						<ul class="keyword-box-list">
+						</ul>
+					</div>
+				</div>
+			</form>
+		</div>
+		<hr class="search-header-hr" />
+
+	</div>
+		<div class="row similar-words">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 text-center similar-words-container">
+				<span class="similar-words-header" th:text="|연관 키워드|">연관 키워드</span>
+				
+				<ul class="similar-words-ul">
+					<li th:each="item : ${similarWords}"><a
+						th:href="@{/search/list(keyword=${item})}"
+						href="/search/list(keyword=${item})" th:text="${item}">${item}</a></li>
+				</ul>
+
+			</div>
+		</div>
+
+</header>
+
+</html>

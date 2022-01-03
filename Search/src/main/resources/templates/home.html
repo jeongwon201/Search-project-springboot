@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/default_template}">
+
+<th:block layout:fragment="css">
+</th:block>
+
+<div layout:fragment="content">
+
+	<div class="container home-container">
+		<div class="row">
+			<div class="col-md-12" align="center">
+				<p class="home-banner">SEARCH</p>
+			</div>
+		</div>
+
+		<div class="row">
+			
+				<div class="col-md-12 text-center">
+					<form id="search-form" class="form-inline" name="search" th:action="@{/search/list}"
+						method="get">
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-search"></i></span>
+								<input id="keyword" type="text" class="form-control"
+									name="keyword" placeholder="검색어를 입력하세요." autocomplete="off">
+							</div>
+							<button id="btnSearch" class="btn btn-default">검색</button>
+						</div>
+					</form>
+					<div class="keyword-box keyword-box-home text-left">
+						<ul class="keyword-box-list">
+						</ul>
+					</div>
+				</div>
+				
+		</div>
+
+	</div>
+
+</div>
+
+</html>

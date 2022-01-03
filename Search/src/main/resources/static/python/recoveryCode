@@ -1,0 +1,21 @@
+//				interp.exec("import json");
+//				interp.exec("import pandas as pd");
+//				interp.exec("from sklearn.feature_extraction.text import TfidfVectorizer");
+//				interp.exec("from sklearn.metrics.pairwise import cosine_similarity");
+//				interp.exec(
+//						"DATA_IN_PATH = 'C:\\\\Users\\\\jeong\\\\Desktop\\\\Eclipse\\\\workspace-spring-jpa-thymeleaf\\\\Search\\\\src\\\\main\\\\resources\\\\static\\\\csv\\\\'");
+//				interp.exec("data = pd.read_csv(DATA_IN_PATH + 'data.csv', header=0, delimiter='\\t', quoting=3)");
+//				interp.exec("data['keyword'] = data['keyword'].fillna('')");
+//				interp.exec("tfidf = TfidfVectorizer()");
+//				interp.exec("tfidf_matrix = tfidf.fit_transform(data['keyword'])");
+//				interp.exec("cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)");
+//				interp.exec("indices = pd.Series(data.index, index=data['keyword']).drop_duplicates()");
+//				interp.exec("py_dic = {}");
+//				interp.exec("for i in data['keyword']:\r\n" + "    idx = indices[i]\r\n"
+//						+ "    sim_scores = list(enumerate(cosine_sim[idx]))\r\n"
+//						+ "    sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)\r\n"
+//						+ "    sim_scores = sim_scores[1:11]\r\n" + "    item_indices = [i[0] for i in sim_scores]\r\n" + "\r\n"
+//						+ "    item_keywords = []\r\n" + "    for j in item_indices:\r\n"
+//						+ "        item_keywords.append(indices.index[j])\r\n" + "\r\n"
+//						+ "    py_dic[i] = json.dumps(item_keywords, ensure_ascii=False, indent=\"\\t\")");
+//				interp.exec("json_data = json.dumps(py_dic, ensure_ascii=False, indent=\"\\t\")");

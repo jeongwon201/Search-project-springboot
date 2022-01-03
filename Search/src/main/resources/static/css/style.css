@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+header {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.search-header {
+	position: fixed;
+	margin: 0 auto;
+	padding-left: 0;
+	padding-right: 0;
+	left: 0;
+	right: 0;
+	z-index: 99999;
+}
+
+.search-header-container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.search-header-homelink {
+	margin-right: 15px;
+}
+
+.search-header-homelink a {
+	color: gray;
+	font-size: 35px;
+}
+
+.search-header-homelink:hover {
+	color: #EEEEEE;
+	text-decoration: none;
+}
+
+.search-header-hr {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.search-header-form {
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#keyword {
+	width: 500px;
+	height: 50px;
+}
+
+#btnSearch {
+	height: 50px;
+}
+
+.home-container {
+	padding-top: 200px;
+	padding-bottom: 500px;
+}
+
+.home-banner {
+	color: gray;
+	font-size: 45px;
+}
+
+.list-container {
+	padding-top: 165px;
+	padding-bottom: 30px;
+}
+
+.list-items {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.item-info-right {
+	height: 150px;
+	border-left: 1px solid lightgray;
+}
+
+.item-image {
+	border: 1px solid lightgray;
+}
+
+.item-title {
+	margin-bottom: 10px;
+}
+
+.item-title-icon {
+	margin-right: 5px;
+	padding: 3px;
+	color: white;
+	font-size: 13px;
+	background-color: #04cf5c;
+	border: 1px solid #04cf5c;
+	border-radius: 5px;
+}
+
+.item-title a {
+	margin-bottom: 5px;
+	color: black;
+	font-size: 17px;
+}
+
+.item-price {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: orange;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.item-category {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	color: gray;
+	font-size: 15px;
+}
+
+.item-mallName {
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 80px;
+}
+
+.item-brand {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.item-maker {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.pagination>li>a {
+	color: gray;
+}
+
+.pagination>li>a:hover {
+	color: gray;
+}
+
+.far, .fas {
+	margin-right: 10px;
+	color: gray;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover
+	{
+	color: white;
+	background-color: gray;
+	border-color: gray;
+}
+
+.keyword-box {
+	visibility: hidden;
+	position: absolute;
+	width: 500px;
+	padding: 0;
+	border: solid 1px #eee;
+	border-radius: 4px;
+	background-color: white;
+}
+
+.keyword-box-home {
+	left: 326px;
+}
+
+.keyword-box-search {
+	margin-left: 39px;
+}
+
+.keyword-box ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.keyword-box ul li {
+	padding: 10px 10px 10px 20px;
+}
+
+.keyword-box ul li:hover {
+	background-color: #eee;
+}
+
+.keyword-box ul li:active {
+	background-color: #dedede;
+}
+
+.similar-words {
+	background-color: white;
+	transition: top 0.2s ease-in-out;
+	position: relative;
+	border-bottom: 1px solid #eee;
+	z-index: -9999;
+}
+
+.nav-up {
+	top: -52px;
+}
+
+.nav-down {
+	top: 0px;
+}
+
+.similar-words-container {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.similar-words-header {
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.similar-words-ul, .similar-words-ul li {
+	list-style: none;
+	float: left;
+	outline: 1px;
+	margin-left: 20px;
+}
+
+.similar-words-ul a:link {
+	color: black;
+	text-decoration: none;
+}
+
+.similar-words-ul a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.similar-words-ul a:hover {
+	color: black;
+	text-decoration: underline;
+}

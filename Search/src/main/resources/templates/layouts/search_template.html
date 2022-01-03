@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	  
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Search</title>
+	
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+	
+	<script src="https://kit.fontawesome.com/22e6476155.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header th:replace="fragments/search_header :: search_headerFragment"></header>
+	
+	<div layout:fragment="content">
+		
+	</div>
+	
+	<footer th:replace="fragments/footer :: footerFragment"></footer>
+	
+	<th:block th:replace="fragments/script :: scriptFragment"></th:block>
+</body>
+
+</html>
